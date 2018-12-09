@@ -22,7 +22,7 @@ namespace dnicolau_tdd_kata.tests
             new object[] { string.Empty, 0 },
             new object[] { "1", 1 },
             new object[] { "1,2", 3 },
-            //new object[] { "1\n2,3", 6 },
+            new object[] { "1\n2,3", 6 },
         };
 
         [DataTestMethod]

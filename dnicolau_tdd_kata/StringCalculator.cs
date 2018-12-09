@@ -9,9 +9,9 @@ namespace dnicolau_tdd_kata.tests
             int result = 0;
             int number = 0;
 
-            var numArray = String.Join(",", numbers);
+            var numArray = numbers.Split(new char[] { ',', '\n' });
 
-            foreach (string num in numArray.Split(','))
+            foreach (string num in numArray)
             {
                 if (Int32.TryParse(num.ToString(), out number))
                     result += number;
