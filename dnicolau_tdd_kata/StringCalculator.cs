@@ -14,6 +14,16 @@ namespace dnicolau_tdd_kata.tests
             int number = 0;
             if (Int32.TryParse(numbers, out number))
                 result = number;
+            else
+            {
+                var numArray = String.Join(",", numbers);
+
+                foreach (char num in numArray)
+                {
+                    if (Int32.TryParse(num.ToString(), out number))
+                        result += number;
+                }
+            }
 
             return result;
         }

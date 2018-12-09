@@ -24,5 +24,15 @@ namespace dnicolau_tdd_kata.tests
             int expected = 1;
             Assert.AreEqual(actual, expected);
         }
+
+        [TestMethod]
+        public void add_twonumbers_numbersum()
+        {
+            StringCalculator sut = new StringCalculator();
+            string twoNumbers = "1,2";
+            int actual = sut.add(twoNumbers);
+            int expected = 3;
+            Assert.AreEqual(actual, expected);
+        }
     }
 }
