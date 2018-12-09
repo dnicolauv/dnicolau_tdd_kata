@@ -11,7 +11,7 @@ namespace dnicolau_tdd_kata.tests
 
             var numArray = String.Join(",", numbers);
 
-            foreach (char num in numArray)
+            foreach (string num in numArray.Split(','))
             {
                 if (Int32.TryParse(num.ToString(), out number))
                     result += number;
