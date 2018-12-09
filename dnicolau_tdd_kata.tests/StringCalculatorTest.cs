@@ -1,37 +1,26 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace dnicolau_tdd_kata.tests
 {
     [TestClass]
     public class StringCalculatorTest
     {
-        [TestMethod]
-        public void add_empty_zero()
+        StringCalculator stringCalculator;
+
+        [TestInitialize()]
+        public void Initialize()
         {
-            StringCalculator sut = new StringCalculator();
-            string empty = string.Empty;
-            int actual = sut.add(empty);
-            int expected = 0;
-            Assert.AreEqual(actual, expected);
+            stringCalculator = new StringCalculator();
         }
 
-        [TestMethod]
-        public void add_onenumber_numbersum()
+        [DataTestMethod]
+        [DataRow("", 0)]
+        [DataRow("1", 1)]
+        [DataRow("1,2", 3)]        
+        public void add_numbers_numbersum(string numbers, int expected)
         {
-            StringCalculator sut = new StringCalculator();
-            string oneNumber = "1";
-            int actual = sut.add(oneNumber);
-            int expected = 1;
-            Assert.AreEqual(actual, expected);
-        }
-
-        [TestMethod]
-        public void add_twonumbers_numbersum()
-        {
-            StringCalculator sut = new StringCalculator();
-            string twoNumbers = "1,2";
-            int actual = sut.add(twoNumbers);
-            int expected = 3;
+            int actual = stringCalculator.add(numbers);
             Assert.AreEqual(actual, expected);
         }
     }
