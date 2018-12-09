@@ -11,6 +11,10 @@ namespace dnicolau_tdd_kata.tests
             if (String.IsNullOrEmpty(numbers))
                 result =  0;
 
+            int number = 0;
+            if (Int32.TryParse(numbers, out number))
+                result = number;
+
             return result;
         }
     }
