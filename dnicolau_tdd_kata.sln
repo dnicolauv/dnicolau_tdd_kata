@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnicolau_tdd_kata", "dnicolau_tdd_kata\dnicolau_tdd_kata.csproj", "{4A5452E5-73DD-448E-85AE-EB51ADEFC1D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnicolau_tdd_kata.tests", "dnicolau_tdd_kata.tests\dnicolau_tdd_kata.tests.csproj", "{850ACCD4-423C-47D4-A689-9E4254586735}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4A5452E5-73DD-448E-85AE-EB51ADEFC1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A5452E5-73DD-448E-85AE-EB51ADEFC1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A5452E5-73DD-448E-85AE-EB51ADEFC1D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850ACCD4-423C-47D4-A689-9E4254586735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850ACCD4-423C-47D4-A689-9E4254586735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850ACCD4-423C-47D4-A689-9E4254586735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850ACCD4-423C-47D4-A689-9E4254586735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
